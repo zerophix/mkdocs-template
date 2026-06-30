@@ -1,5 +1,5 @@
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# {PROJECT_NAME} — 项目文档站
+# MkDocs Template — 项目文档站 (GitHub Pages: zerophix.github.io)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 使用说明：
 #   1. 全局替换 {PROJECT_NAME} 为实际项目名
@@ -8,11 +8,15 @@
 #   4. nav 路径从 docs/ 根开始（如 guides/deployment.md）
 #   5. 按需调整 nav 中的子页面（增删 .md 文件后同步更新 nav）
 #   6. 运行 mkdocs serve 预览
+#   7. 部署: mkdocs gh-deploy
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 site_name: "{PROJECT_NAME}"
 site_description: "{PROJECT_DESC}"
 site_author: "{AUTHOR}"
+site_url: "https://zerophix.github.io"
+repo_url: "https://github.com/zerophix/mkdocs-template"
+repo_name: "zerophix/mkdocs-template"
 
 # ── Navigation ──
 # 规则：
