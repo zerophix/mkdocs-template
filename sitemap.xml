@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://zerophix.github.io/</loc>
+         <loc>https://zerophix.github.io/mkdocs-template/</loc>
          <lastmod>2026-06-30</lastmod>
     </url>
     <url>
-         <loc>https://zerophix.github.io/DOC-GUIDE/</loc>
+         <loc>https://zerophix.github.io/mkdocs-template/DOC-GUIDE/</loc>
          <lastmod>2026-06-30</lastmod>
     </url>
     <url>
-         <loc>https://zerophix.github.io/architecture/</loc>
+         <loc>https://zerophix.github.io/mkdocs-template/architecture/</loc>
          <lastmod>2026-06-30</lastmod>
     </url>
     <url>
-         <loc>https://zerophix.github.io/changelog/</loc>
+         <loc>https://zerophix.github.io/mkdocs-template/changelog/</loc>
          <lastmod>2026-06-30</lastmod>
     </url>
     <url>
-         <loc>https://zerophix.github.io/guides/</loc>
+         <loc>https://zerophix.github.io/mkdocs-template/guides/</loc>
          <lastmod>2026-06-30</lastmod>
     </url>
     <url>
-         <loc>https://zerophix.github.io/notes/</loc>
+         <loc>https://zerophix.github.io/mkdocs-template/notes/</loc>
          <lastmod>2026-06-30</lastmod>
     </url>
     <url>
-         <loc>https://zerophix.github.io/reference/</loc>
+         <loc>https://zerophix.github.io/mkdocs-template/reference/</loc>
          <lastmod>2026-06-30</lastmod>
     </url>
 </urlset>
