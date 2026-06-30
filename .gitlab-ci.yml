@@ -1,0 +1,48 @@
+# GitLab CI/CD - 自动部署 MkDocs 文档到 GitLab Pages
+# 将此文件复制到目标项目根目录
+
+stages:
+  - build
+  - deploy
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .cache/pip
+
+build_docs:
+  stage: build
+  image: python:3.11-slim
+  before_script:
+    - pip install --cache-dir $PIP_CACHE_DIR -r requirements.txt
+  script:
+    - mkdocs build --strict
+  artifacts:
+    paths:
+      - site/
+    expire_in: 1 week
+  only:
+    - main
+    - master
+    - tags
+
+pages:
+  stage: deploy
+  image: alpine:latest
+  dependencies:
+    - build_docs
+  script:
+    - mv site/ public/
+  artifacts:
+    paths:
+      - public/
+    expire_in: 1 year
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"
+    - if: $CI_COMMIT_TAG
+  environment:
+    name: github-pages
+    url: https://$CI_PROJECT_PAGES_DOMAIN/$CI_PROJECT_NAME/
