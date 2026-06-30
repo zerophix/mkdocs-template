@@ -14,7 +14,7 @@
 site_name: "{PROJECT_NAME}"
 site_description: "{PROJECT_DESC}"
 site_author: "{AUTHOR}"
-site_url: "https://zerophix.github.io"
+site_url: "https://zerophix.github.io/mkdocs-template/"
 repo_url: "https://github.com/zerophix/mkdocs-template"
 repo_name: "zerophix/mkdocs-template"
 
